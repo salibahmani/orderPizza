@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Italian pizza</title>
+  </head>
+  <style>
+    body {
+      background-color: whitesmoke;
+    }
+    h1 {
+      text-align: center;
+      color: #ca0001;
+      border: 4px solid gray;
+      border-radius: 10px;
+      padding: 15px;
+      font-size: 50px;
+    }
+    h2 {
+      text-align: center;
+      color: #e6b325;
+      padding: 0px;
+      font-size: 30px;
+    }
+    img {
+      display: block;
+      margin: 0px auto;
+      max-width: 70%;
+      border-radius: 20px;
+      padding: 10px;
+    }
+    p {
+      line-height: 1.5c;
+      font-size: 20px;
+    }
+    .wikipedia {
+      text-decoration: none;
+      color: #ca0001;
+    }
+    .wikipedia:hover {
+      text-decoration: underline;
+      cursor: grab;
+    }
+    button {
+      display: block;
+      margin: 0px auto;
+      padding: 20px;
+      border-radius: 20px;
+      color: #ca0001;
+      background-color: azure;
+      border: 1px solid gray;
+      box-shadow: 5px 5px 10px rgb(119, 119, 119);
+      transition: all 200ms;
+    }
+    button:hover {
+      color: white;
+      background-color: #ca0001;
+      cursor: grab;
+    }
+    .name {
+      text-align: center;
+      font-size: medium;
+      padding-top: 20px;
+      color: black;
+    }
+    .contain {
+      background-color: #f3e0b5;
+      margin: 0 auto;
+      max-width: 600px;
+      padding: 60px;
+      border-radius: 30px;
+      box-shadow: 10px 10px 20px gray;
+    }
+  </style>
+  <body>
+    <div class="contain">
+      <h1>I Love Pizza 🍕</h1>
+      <h2>Especially Italian Pizza</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/603/original/UCH2FNXQ4T347PH655IFVALTZM.jpg?1670744962"
+        alt="Italian pizza"
+      />
+      <hr />
+      <p>
+        Pizza is a dish of Italian origin consisting of a usually round, flat
+        base of leavened wheat-based dough topped with tomatoes, cheese, and
+        often various other ingredients, which is then baked at a high
+        temperature, traditionally in a wood-fired oven. A small pizza is
+        sometimes called a pizzetta.
+      </p>
+      <p>
+        <a
+          href="https://en.wikipedia.org/wiki/Pizza"
+          target="_blank"
+          class="wikipedia"
+        >
+          Read more on Wikipedia
+        </a>
+      </p>
+      <button>🍕Buy Italian Pizaa🍕</button>
+      <div class="name">Designed by Salehe Bahmani</div>
+      <script>
+        function pizza() {
+          let name = prompt("What is your name?");
+          let email = prompt("What is your email?");
+          let emoji = prompt("What is your favourite emoji?");
+          if (name.length > 0) {
+            alert("Thanks! " + name + " We will be in touch" + emoji);
+          } else {
+            alert("No name!" + " No🍕 for you!");
+          }
+        }
+
+        let pizzaButton = document.querySelector("button");
+        pizzaButton.addEventListener("click", pizza);
+      </script>
+    </div>
+  </body>
+</html>
